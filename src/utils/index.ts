@@ -8,7 +8,7 @@ export async function copyToClipboard(text: string) {
     element.value = text
 
     // Prevent keyboard from showing on mobile
-    element.setAttribute("readonly", "")
+    element.setAttribute("readonly")
 
     element.style.contain = "strict"
     element.style.position = "absolute"
