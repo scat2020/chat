@@ -1,7 +1,22 @@
-::-webkit-scrollbar {
+.container {
+  overflow: auto;
+  height: 300px; /* 假设容器高度为 300px，超出部分会滚动 */
+}
+
+.container::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+/* ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-  /**/
+  
 }
 ::-webkit-scrollbar-track {
   background: #404552;
@@ -15,7 +30,7 @@
 
 ::-webkit-scrollbar-corner {
   background: transparent;
-}
+} */
 
 :root {
   --c-bg: #171921;
